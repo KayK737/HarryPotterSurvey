@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --color-primary: #006241;
+    --color-secondary: #d50032;
+    --color-extra: #d4e9e2;
+}
+*{
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 0;
+}
+
+html, 
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #000;
+    margin: auto;
+}
+
+#name, #email, #number {
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--color-extra);
+    
+}
+
+h4, h1{
+    margin: 10px;
+    padding: 10px;
+}
+
+#dropdown{
+    padding: 5px;
+    background: var(--color-extra); 
+}
+
+#submit {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    
+}

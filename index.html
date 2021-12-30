@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Harry Potter Survey</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Input a number 0-100 on how much you liked the Harry Potter Series.</p>
+    <form id="survey-form">
+        <!-- Asking user for name, email, and rating s-->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Put name here..." required><br>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Put email here..." required><br>
+        <label for="number" id="number-label">Rating:</label>
+        <input type="number" min=0 max=100 id="number"  placeholder="Place rating here..."><br>
+        
+
+        <!-- Dropdown menu for favorite harry potter movie -->
+        <label for="dropdown">Select your favorite Harry Potter Movie</label>
+        <select name="movie" id="dropdown">
+            <option value="harry1">Harry Potter and the Sorceror Stone</option>
+            <option value="harry2">Harry Potter and the Chamber of Secrets</option>
+            <option value="harry3">Harry Potter and the Prisoner of Askaban</option>
+            <option value="harry4">Harry Potter and the Goblet of Fire</option>
+            <option value="harry5">Harry Potter and the Order of the Pheonix</option>
+            <option value="harry6">Harry Potter and the Half-Blood Prince</option>
+            <option value="harry7">Harry Potter and the Deathly Hallows Part 1</option>
+            <option value="harry8">Harry Potter and the Deathly Hallows Part 2</option>
+        </select><br>
+
+        <!--radio button asking least favorite harry potter movie-->
+        <h4>How accurate were the movies to the books if you read them?</h4>
+        
+        <input type="radio" name="Harry_Rating" id="Highly-Accurate" value="1">
+        <label for="Highly-Accurate">Highly Accurate</label><br>
+        
+        <input type="radio" name="Harry_Rating" id="Somewhat-Accurate" value="2">
+        <label for="Somewhat-Accurate">Somewhat Accurate</label><br>
+
+        <input type="radio" name="Harry_Rating" id="Not-Accurate" value="3">
+        <label for="Not-Accurate">Not Accurate</label><br>
+        
+        <input type="radio" name="Harry_Rating" id="Did Not Read" value="4">
+        <label for="Did Not Read">Did Not Read</label><br><br>
+
+        <!-- Check Boxes -->
+        <h4>Who did you like for character development from the Golden Trio?</h4>
+        <input type="checkbox" id="Harry" name="HarryPotter" value="HP">
+        <label for="HarryPotter"> Harry</label><br>
+        <input type="checkbox" id="Hermione" name="HermioneGranger" value="HG">
+        <label for="HermioneGranger"> Hermione</label><br>
+        <input type="checkbox" id="Ron" name="RonWeasley" value="RW">
+        <label for="RonWeasley"> Ron</label><br>
+
+        <!--Additional Comments-->
+        <h4>Any Additional Comments</h4>
+        <textarea name="comments" id="" cols="30" rows="10" placeholder="Put additional comments here..."></textarea><br><br>
+        <!--Submit button at the end of the form-->
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
